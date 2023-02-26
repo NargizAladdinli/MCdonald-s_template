@@ -1,0 +1,69 @@
+#cars{
+    padding: 50px 0px;
+    .img{
+       img{@include Img($wid:$wid_100,$pos:relative,$flow:hidden);}
+    }
+    // .box{
+    //     @include Text($ground:$white_ground,$border:1px,$b_radius:5px);
+    //     @include Img($wid:310px,$heit:220px,$pos:absolute,$bottom:-250px,$left:200px);
+    //     @media (max-width:768px) {display: none;}
+    //    .order{
+    //     @include Flex($gap:50px,$f_direction:column);
+    //     margin: 10px 15px;
+    //     h3{@include Text($colors:$color_all,$f_weight:$font_500); }
+    //      button{
+    //          @include Text($ground:$ground_color,$colors:$color_all,$border:1px,$b_radius:5px);
+    //          @include Img($wid:150px,$heit:50px);
+    //      }
+    //    }
+    // }
+}
+#card{
+    padding: 50px 0px;
+    img{width: $wid_100;}
+    h3{@include Text($colors:$color_all,$f_size:2.2rem,$f_weight:$font_500);}
+    p{
+        color: $color_all;
+        width: 300px;
+        padding: 15px 0px;
+    }
+    button{
+        @include Img($wid:150px,$heit:50px);
+        @include Text($ground:$ground_color,$colors:$color_all,$border:1px,$b_radius:5px);
+    }
+}
+#img{
+    padding: 50px 0px;
+    img{width: $wid_100;}
+    h3{@include Text($colors:$color_all,$f_size:2.2rem,$f_weight:$font_500);}
+    p{color: $color_all;}
+    button{
+        @include Img($wid:150px,$heit:50px);
+        @include Text($ground:$ground_color,$colors:$color_all,$border:1px,$b_radius:5px);
+    }
+}
+.modal-body{
+    .img{
+        img{@include Img($wid:300px,$heit:300px,$fit:cover,$o_pos:center);}
+    }
+}
+#dely{
+    padding: 50px 0px;
+    .img{
+        h1{
+            @include Text($colors:$color_all,$f_weight:$font_500,$t_align:center);
+            padding: 30px 0px;
+        }
+        img{width: $wid_100;}
+    }
+    .text{
+        width: $wid_100;
+        padding: 50px 0px;
+        h3{@include Text($colors:$color_all,$f_weight:$font_500);}
+        p{padding: 25px 0px;}
+        button{
+            @include Img($wid:350px,$heit:50px);
+            @include Text($ground:$ground_color,$colors:$color_all,$border:1px,$b_radius:5px);
+        }
+    }
+}

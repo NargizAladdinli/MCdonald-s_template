@@ -1,0 +1,29 @@
+@mixin Flex($f_content:null,$a_items:null,$gap:null,$wrap:null,$f_direction:null) {
+    display: flex;
+    justify-content: $f_content;
+    align-items: $a_items;
+    gap: $gap;
+    flex-wrap: $wrap;
+    flex-direction: $f_direction;
+}
+@mixin Text($ground:null,$b_bottom:null,$t_decoration:null,$colors:null,$f_size:null,$f_weight:null,$border:null,$b_radius:null,$t_align:null) {
+    background: $ground;
+    border-bottom: $b_bottom;
+    text-decoration: $t_decoration;
+    color: $colors;
+    font-size: $f_size;
+    font-weight: $f_weight;
+    border: $border;
+    border-radius: $b_radius;
+    text-align: $t_align;
+}
+@mixin Img($wid:null,$heit:null,$pos:null,$flow:null,$bottom:null,$left:null,$fit:null,$o_pos:null) {
+    width: $wid;
+    height: $heit;
+    position: $pos;
+    overflow: $flow;
+    bottom: $bottom;
+    left: $left;
+    object-fit: $fit;
+    object-position: $o_pos;
+}

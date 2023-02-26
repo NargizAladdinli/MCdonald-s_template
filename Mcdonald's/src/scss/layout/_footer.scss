@@ -1,0 +1,15 @@
+#main{
+    padding: 50px 0px;
+    @media (max-width:768px) {display: none;}
+    ul{
+        li{
+            a{@include Text($t_decoration:none,$colors:$color_all,$f_size:15px);}
+        }
+    }
+}
+.modal-footer{
+    button{
+        @include Img($wid:150px,$heit:50px);
+        @include Text($ground:$ground_color,$colors:$color_all,$border:1px,$b_radius:5px);
+    }
+}

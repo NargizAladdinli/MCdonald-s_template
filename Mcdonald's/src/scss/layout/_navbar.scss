@@ -1,0 +1,28 @@
+#menu {
+    @include Text($ground:$white_ground,$b_bottom:1px solid #80808029);
+    .list {
+        @media (max-width:768px) {display: none;}
+        ul {
+            @include Flex($gap: 20px);
+            li {
+                a {@include Text($t_decoration:none,$colors:$color_all,$f_size:15px);}
+            }
+        }
+    }
+    .list2 {
+        @media (max-width:768px) {display: none;}
+        padding: 20px 0px;
+        ul {
+            @include Flex($gap: 20px);
+            li {
+                a {@include Text($t_decoration:none,$colors:$color_all,$f_size:15px,$f_weight:$font_500);}
+            }
+        }
+    }
+    .boxing {
+        button {
+            @include Img($wid:150px,$heit:50px);
+            @include Text($ground:$ground_color,$colors:$color_all,$border:1px,$b_radius:5px);
+        }
+    }
+}
