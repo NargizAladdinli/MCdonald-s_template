@@ -1,0 +1,1 @@
+# MCdonald-s_template
