@@ -27,14 +27,3 @@
     object-fit: $fit;
     object-position: $o_pos;
 }
-%_box{
-    position: absolute;
-        bottom: 20%;
-        left: 5%;
-        background: #fff;
-        width: 450px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
